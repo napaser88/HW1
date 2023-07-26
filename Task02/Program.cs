@@ -9,11 +9,9 @@ Console.WriteLine("Введите второе число: ");
 int numB = Convert.ToInt32(Console.ReadLine());
 if (numA > numB)
 {
-    Console.Write("Большее число: ");
-    Console.WriteLine(numA);
+    Console.WriteLine($"Большее число: {numA}");
 }
 else
 {
-    Console.Write("Большее число: ");
-    Console.WriteLine(numB);
+    Console.WriteLine($"Большее число: {numB}");
 }

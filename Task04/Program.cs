@@ -22,5 +22,4 @@ if (numberC > max)
 {
     max = numberC;
 }
-Console.Write("Максимальное из введённых чисел: ");
-Console.WriteLine(max);
+Console.WriteLine($"Максимальное из введённых чисел: {max}");
