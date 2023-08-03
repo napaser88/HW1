@@ -22,7 +22,7 @@ void CubeTable(int num)
     for (int i = 1; i <= num; i++)
     {
         int cube = i * i * i;
-        Console.WriteLine($"{i} | {cube}");
+        Console.WriteLine($"{i,3} | {cube,5}");
     }
 }
 
