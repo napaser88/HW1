@@ -31,6 +31,7 @@ int userNum = Convert.ToInt32(Console.ReadLine());
 
 if (ValidateNum(userNum))
 {
+    Console.WriteLine($"Таблица кубов чисел от 1 до {userNum}:");
     CubeTable(userNum);
 }
 
