@@ -5,8 +5,12 @@
 int NumberDegree(int a, int b)
 {
     int deg = 1;
-    for(int i = 1; i <= b; i++){
-        deg *= a;
+    for(int i = 1; i <= b; i++)
+    {
+        checked
+        {
+          deg *= a;  
+        }
     }
     return deg;
 }
