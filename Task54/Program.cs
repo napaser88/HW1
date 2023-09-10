@@ -35,7 +35,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void DescendRowInArray(int[,] arr)
+void DescendRowInArray(int[,] matrix)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
