@@ -32,3 +32,33 @@ void PrintMatrix(int[,] matrix)
         Console.WriteLine();
     }
 }
+
+int[] SmallerSumNumberInRow(int[,] matrix)
+{
+    int[] sum = new int[matrix.GetLength(0)];
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            sum[i] += matrix[i, j];
+
+        }
+    }
+    return sum;
+}
+
+void PrintSmallerRow(int[] array)
+{
+    int step = 0;
+    for (int i = 1; i < array.Length; i++)
+    {
+        if (array[i] < array[step]) step = i;
+    }
+    Console.WriteLine($"Строка массива с наименьшей суммой элементов -> {step + 1}");
+}
+
+int[,] array2d = CreateMatrixRndInt(5, 5, 1, 10);
+Console.WriteLine($"Двумерный массив размером {5}x{5} ->");
+PrintMatrix(array2d);
+int[] sumArr = SmallerSumNumberInRow(array2d);
+PrintSmallerRow(sumArr);
