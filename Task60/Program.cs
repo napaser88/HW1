@@ -18,6 +18,25 @@ int GenerateUniqueNumber()//Эту функкцию почерпнул со Stac
         }
     }
 }
+//Создание трехмерного массива без рандомных чисел
+// int[,,] CreateRandomArray3D(int rows, int columns, int pages)
+// {
+//     int[,,] arr = new int[rows, columns, pages];
+//     int step = 10;
+
+//     for (int i = 0; i < arr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < arr.GetLength(1); j++)
+//         {
+//             for (int k = 0; k < arr.GetLength(2); k++)
+//             {
+//                 arr[i, j, k] = step;
+//                 step += 7;
+//             }
+//         }
+//     }
+//     return arr;
+// }
 
 int[,,] CreateRandomArray3D(int rows, int columns, int pages)
 {
